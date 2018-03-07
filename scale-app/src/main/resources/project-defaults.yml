@@ -1,0 +1,13 @@
+environment: default
+logger:
+  level: INFO
+swarm:
+  http:
+    port: 8580
+  context:
+    path: /
+  deployment:
+    scale-app.war:
+      jaxrs:
+        application-path: /rest
+
